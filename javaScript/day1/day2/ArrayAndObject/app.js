@@ -82,3 +82,98 @@
 // console.log(a);
 // console.log(person3.weight);
 // ----------------------------------------------------------------------
+////////////////nested objects////////////////////
+// const person1={
+//     name:'srinivas',
+//     height:1.4,
+//     weight:72,
+//     collage:'LPU',
+//     rollNumber:12207375,
+//     marks:{
+//         maths:20,
+//         science:30,
+//     }
+
+// };
+// const person2={...person1};
+// person2.name="raj";
+// person2.marks.maths=49;
+// console.log("person:",person1);
+// console.log("person2:",person2);
+
+
+
+//-------------------------------------------------------------------ARRAYS-------------------------------------------------------
+// const arr=['a','b','c','d'];
+// console.log(arr);
+// //1
+// console.log(arr[1]);
+// //2
+// const [h,j,k]=arr;
+// console.log(h,j);
+// //ADD
+// const arr1=["tata","mahindra","suzuki","hyundai"];
+// arr1[10]='hi';
+// console.log(arr1);
+
+// arr1.push("honda");//add the element in any index
+// arr1.pop;//delete the element in any index
+
+// arr1.shift();//it reemove first element of array
+// arr1.unshift('hiiii');//it add eleme t to the frst index
+// arr1.splice(1,2,'kia','bye','jjjjj')
+// console.log(arr1);
+//find the index of the element which is equal to "suzuki"
+// const arr1=["tata","mahindra","suzuki","hyundai"];
+// console.log(arr1.indexOf("suzuki"));
+
+// const arr=[
+//     {name:'a',city:"delhi"},
+//     {name:"b",city:"kanpur"},
+//     {name:"c",city:"mumbai"},
+// ];
+// console.log(arr.indexOf({name:'a',city:"delhi"}));
+
+//-----------------------array search methods---------------------------------
+// const a=['a','b','c','d'];
+// if(a.includes('m')){
+//     console.log("present");
+// }else{
+//     console.log('absent');
+// }
+// ~~~~~~~~~~~~~~~~
+// const arr=[
+//     {name:"a",city:'hi'},
+//     {name:"b",city:"bye"},
+//     {name:"c",city:"jjj"},
+// ];
+// const myFunc=(a)=>{
+//     if(a.name==="c")return true;
+//     return false;
+// };
+// const ans=arr.find(myFunc);
+// console.log(ans);
+// ~~~~~~~~~~~~~~~~~~~~~~~~
+const arr=[
+    {name:"a",city:'hi',score:15},
+    {name:"b",city:"bye",score:50},
+    {name:"c",city:"jjj",score:100},
+];
+const myFunc=(elem)=>{
+    if(elem.score<25){
+        return{...elem,remark:"fail"};
+    }else{
+        return{...elem,remark:"pass"};
+    }
+};
+const resArr=arr.map(myFunc);
+console.log("resArr:",resArr);
+
+
+
+
+
+
+
+
+
