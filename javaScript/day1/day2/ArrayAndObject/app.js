@@ -16,7 +16,6 @@
 // delete cse022.address;
 // console.log("cse022",cse022);
 
-
 // //primitivies=all datatypes are except object
 // //nonpremitive are object
 
@@ -41,14 +40,12 @@
 //             }else{
 //                 console.log(this.name,"is obesity");
 //             }
-        
+
 //     },
 // };
 // person.getBMI();
 // person.weight=100;
 // person.getBMI();
-
-
 
 // //printing key and values
 // const allkeys=Object.keys(person);
@@ -56,7 +53,6 @@
 // console.log("all keys:",allkeys);
 // const allvalues=Object.values(person);
 // console.log("all values:",allvalues);
-
 
 // //in javaascript objects(nonpremitive) are immutable and primitives are mutable
 // const person1={
@@ -76,7 +72,7 @@
 // const{weight,collage}=person2;
 // console.log(":->",weight,collage);
 // /////spread operator/////
-// const person3={...person1};//it helps us to store the value in different adddress with having same copy 
+// const person3={...person1};//it helps us to store the value in different adddress with having same copy
 // console.log(person3);
 // const a=person1.weight=100;
 // console.log(a);
@@ -100,8 +96,6 @@
 // person2.marks.maths=49;
 // console.log("person:",person1);
 // console.log("person2:",person2);
-
-
 
 //-------------------------------------------------------------------ARRAYS-------------------------------------------------------
 // const arr=['a','b','c','d'];
@@ -154,26 +148,17 @@
 // const ans=arr.find(myFunc);
 // console.log(ans);
 // ~~~~~~~~~~~~~~~~~~~~~~~~
-const arr=[
-    {name:"a",city:'hi',score:15},
-    {name:"b",city:"bye",score:50},
-    {name:"c",city:"jjj",score:100},
+const arr = [
+  { name: "a", city: "hi", score: 15 },
+  { name: "b", city: "bye", score: 50 },
+  { name: "c", city: "jjj", score: 100 },
 ];
-const myFunc=(elem)=>{
-    if(elem.score<25){
-        return{...elem,remark:"fail"};
-    }else{
-        return{...elem,remark:"pass"};
-    }
+const myFunc = (elem) => {
+  if (elem.score < 25) {
+    return { ...elem, remark: "fail" };
+  } else {
+    return { ...elem, remark: "pass" };
+  }
 };
-const resArr=arr.map(myFunc);
-console.log("resArr:",resArr);
-
-
-
-
-
-
-
-
-
+const resArr = arr.map(myFunc);
+console.log("resArr:", resArr);
