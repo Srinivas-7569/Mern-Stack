@@ -48,15 +48,26 @@
 // printBill("banana",res3);
 // -----------------------------------------------------------------------------
 //function assignment()
-const printbill=function printBill(name,amount){
-     console.log("------------------");
-    console.log("your bill for",name);
-    console.log("rs.",amount);
-    console.log("----------------------");
-};
-//function assignment(anonymous function)
-const calculateBillAmount=function  calculateBillAmount(price,gst){
-console.log("....calculating...");
-  let billAmount=price+price*gst;
-  return billAmount;
-};
+// const printbill=function printBill(name,amount){
+//      console.log("------------------");
+//     console.log("your bill for",name);
+//     console.log("rs.",amount);
+//     console.log("----------------------");
+// };
+// //function assignment(anonymous function)
+// const calculateBillAmount=function  calculateBillAmount(price,gst){
+// console.log("....calculating...");
+//   let billAmount=price+price*gst;
+//   return billAmount;
+// };
+
+
+
+
+
+
+
+
+
+
+
