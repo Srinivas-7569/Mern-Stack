@@ -1,0 +1,11 @@
+.search{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.box{
+    border-style: dashed;
+    box-shadow: inset;
+}
